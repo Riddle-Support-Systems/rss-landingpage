@@ -34,7 +34,7 @@
         }
 
         header img {
-            max-height: 50px; /* Adjust this value to fit your logo's size */
+            max-height: 50px;
             margin-right: 20px;
         }
 
@@ -48,6 +48,35 @@
         main p {
             line-height: 1.7;
             font-size: 1.1em;
+        }
+
+        /* Style for the oversized "Hi!" */
+        .greeting {
+            font-size: 3em;
+            font-weight: 600;
+            color: #007bff; /* A friendly blue */
+            display: block; /* Puts it on its own line */
+            margin-bottom: 10px;
+        }
+
+        /* Container for the client logo and link */
+        .client-showcase {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Space between logo and text */
+            margin-top: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f8f9fa; /* A subtle background to make it stand out */
+        }
+
+        .client-showcase img {
+            max-height: 40px; /* Controls the size of the client logo */
+        }
+
+        .client-showcase a {
+            font-size: 1.2em;
+            font-weight: bold;
         }
 
         /* Footer Section */
@@ -85,17 +114,23 @@
 
         <main>
             <p>
-                Riddle Support Systems specializes in providing expert IT support and Microsoft 365 administration. We focus on building secure, scalable, and compliant technology foundations for our clients.
+                <span class="greeting">Hi!</span> My name is Isaac Riddle. I founded Riddle Support Systems to provide dedicated IT support and Microsoft 365 administration, <strong>specializing in the technical safeguards of the HIPAA Security Rule.</strong>
             </p>
             <p>
-                We are proud to partner with exceptional organizations like <a href="https://www.empowerizetherapy.com" target="_blank">Empowerize Therapy Center</a>.
+                My goal is to build a secure, scalable, and compliant technology foundation for my client. Currently, my practice is dedicated exclusively to serving:
             </p>
+            
+            <div class="client-showcase">
+                <img src="empowerize-logo.png" alt="Empowerize Therapy Center Logo">
+                <a href="https://www.empowerizetherapy.com" target="_blank">Empowerize Therapy Center</a>
+            </div>
         </main>
 
         <footer>
             <h3>Contact Information</h3>
             <p>Isaac Riddle, Owner</p>
-            <p>Email: <a href="mailto:your-email@riddlesupportsystems.com">your-email@riddlesupportsystems.com</a></p>
+            <p>9848 Rembrandt Way, Fenton, MI, 48430 </p>
+            <p>Email: <a href="mailto:iriddle@riddlesupportsystems.com">iriddle@riddlesupportsystems.com</a></p>
         </footer>
 
     </div>
